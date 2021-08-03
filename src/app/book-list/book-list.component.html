@@ -1,0 +1,14 @@
+<div class="box">
+  <p class="p">tile</p>
+  <p class="p">price</p>
+  <p class="p">desc</p>
+  <p class="p">auther</p>
+</div>
+<div class="box" *ngFor="let book of books">
+  <p>{{book.title}}</p>
+  <p>{{book.price}}</p>
+  <p>{{book.desc}}</p>
+  <p>{{book.auther}}</p>
+  <a routerLink="/update/{{book.id}}">update</a>
+  <button (click)="onRemove(book.id)">delete</button>
+</div>

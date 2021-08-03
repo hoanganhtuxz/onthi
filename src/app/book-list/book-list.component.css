@@ -1,0 +1,11 @@
+.box{
+  border-bottom: 1px solid blue;
+  display: flex;
+}.box p{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.p{
+  color: red;
+}
+
